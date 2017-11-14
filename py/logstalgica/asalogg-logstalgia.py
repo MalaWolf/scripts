@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-# Written By: Patrick Taylor
-#*******Purpose Take iptables log and make it look like apache so we could use it with
-#logstalgia
+# Written after an idea By: Patrick Taylor :: Purpose Take iptables log and make it look like apache so we could use it with
+# Rewritten by MalaWolf, convert/rewrite Cisco ASA log into NCSA format for logstalgia consumption from a linux fifo buffer
+#
+#
 #**************** import modules here
 import os
 import sys
@@ -87,20 +88,9 @@ def main():
                         #break
                         if FILEGIVEN == 1 :
                                 f.close()
-# 195.254.173.20 - - [05/Jun/2013:19:20:17 +0200] "GET 10.152.102.10.in-addr.arpa HTTP/1.0" IN_PTR - "-" "195.254.173.100
 
 #run the following functions when script is called by name
 if __name__ == '__main__':
         for line in tail_f(open(sys.argv[1])):
                 main()
-
-# 0  = 'Jun', 		1 = '11' 
-# 2  = '07:26:21', 	3 = 'bp-ekstern', 
-# 4  = ':', 		5 = '%ASA-4-106023:', 
-# 6  = 'Deny', 		7 = 'tcp', 
-# 8  = 'src', 		9 = 'outside:74.217.148.72/11576', 
-# 10 = 'dst', 		11 ='DH-AC-DMZ:195.254.173.184/443', 
-# 12 = 'by', 		13 = 'access-group', 
-# 14 = '"outside_in"', 	15 = '[0x4cc7a6a3,', 
-# 16= '0x0
 
