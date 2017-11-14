@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Written By: MW
+# Written By: MW for debugging purposese
 import os
 import sys
 import re

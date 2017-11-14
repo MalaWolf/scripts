@@ -1,9 +1,10 @@
 #!/usr/bin/env python
+#
 # Written after an idea By: Patrick Taylor :: Purpose Take iptables log and make it look like apache so we could use it with
 # Rewritten by MalaWolf, convert/rewrite Cisco ASA log into NCSA format for logstalgia consumption from a linux fifo buffer
 #
-#
-#**************** import modules here
+
+
 import os
 import sys
 import re

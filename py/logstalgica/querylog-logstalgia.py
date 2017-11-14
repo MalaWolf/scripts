@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # 
-#Based on idea by: Patrick Taylor 
-#*******Purpose:
-# Take bind9 query log and make it look like apache so we could use it with logstalgia 
-#**************** import modules here
+# Based on idea by: Patrick Taylor, rewritten by MW
+# Purpose: Take bind9 query log and make it look like apache/NCSA so we could use it with logstalgia 
+#
 import os 
 import sys 
 import re 
